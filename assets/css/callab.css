@@ -207,12 +207,16 @@ button:hover {
 
 
 
+body {
+    font-family: "Open Sans", sans-serif;
+    
+}
 h1{ margin-top: 75px;
-    color: rgba(133,114,81,1);
+    color: #0e1b4d;
     text-align:center;
     padding-bottom: 10px;
     font-size: 300%;
-    
+   
     
 }
 
@@ -220,15 +224,16 @@ h1{ margin-top: 75px;
     line-height: 1.6;
     margin-top: 50px;
     margin-right: 50px;
-    border-style: none;
+    margin-bottom: 50px;
+    border-style: hidden;
     background-color: white;
     padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-right: 70px;
+    padding-bottom: 0px;
+    padding-left: 120px;
     animation: Slide_Up 1.4s ease;
-   
 }
+
 @keyframes Slide_Up {
     0% {
         transform: translateY(250px);
@@ -240,51 +245,69 @@ h1{ margin-top: 75px;
 h3{
     font-size: 30px;
     text-align:center;
+    color: #0e1b4d;
 }
 hr{
     height:5px; 
     width:20%;
      border-width:0;
-     color:rgba(133,114,81,1);
-      background-color:rgba(133,114,81,1);
+     color:rgb(20, 11, 148);
+     background-color: rgb(20, 11, 148);
 }
+.column2{
+border: none;
+padding-left: 20px;
+padding-right: 20px;
 
+
+
+}
 .imp{
     border-style: none;
    
     
-   
+    
     font-size: 20px;
 }
-h3{
-    color: rgba(133,114,81,1);
-    
+
+@keyframes type{
+    0%{
+ width:0ch;
+    }
+    100%{
+    width:50ch;
+    }
 }
-* {
-    box-sizing: border-box;
-  }
-  
+
   .column {
-      
-    float: left;
-    width: 33.33%;
-    padding: 2px;
+    flex-wrap: wrap;
+ 
+    padding-left: 0px;
+    padding-right:0px ;
+ 
    
   }
   
   /* Clearfix (clear floats) */
-  .row::after {
+  .row {
+    margin-left:240px;
+    max-width:1200px;
     content: "";
     clear: both;
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border:none;
+    padding-left: 10px;
+padding-right:10px ;
+    animation: Slide_Up 1.4s ease;
   }
   hr{
     width: 20%;
     border:solid 4px;
     height: 1px;
    
-    color:rgba(133,114,81,1); 
-    background-color: rgba(133,114,81,1);
+   
     margin: auto;
     animation: Slide_right 1.4s ease;
   }
@@ -307,7 +330,7 @@ h3{
         padding-top: 50px;
         padding-right: 30px;
         padding-bottom: 50px;
-        padding-left: 7 0px;
+        padding-left: 30px;
         animation: Slide_Up 1.4s ease;
         font-size: 30px;;
         
@@ -325,37 +348,78 @@ h3{
            
             
            
-            font-size: 35px;
+            font-size: 28px;
         
     }
 }
 @media only screen and (min-width:280px) and (max-width:767px){
-    
+    h1{ margin-top: 75px;
+       
+        text-align:center;
+        padding-bottom: 10px;
+        font-size: 250%;
+        margin-left: 40px;
+        
+        
+    }
     .bod{
         width:100%;
         line-height: 1.6;
         margin-top: 65px;
-        margin-right: 50px;
+        margin-right: 40px;
         border-style: none;
         background-color: white;
         padding-top: 50px;
         padding-right: 30px;
-        padding-bottom: 50px;
-        padding-left: 35px;
+      
+        padding-left: 30px;
         animation: Slide_Up 1.4s ease;
        
     }
-    ul{list-style-type:square;border:none;
-        padding-left: 20px;
-     
-       
+    .ul1{list-style-type:square;
+        border:none;
+        margin-left: -20px;
     }
+        hr{
+            width: 20%;
+            border:solid 3.5px;
+            margin-left: 45%;
+            animation: Slide_right 1.4s ease;
+            
+          
+        }  
+       
+    
     .imp{
         border-style: none;
         font-size: 20px;
         
         
     }
+    .column {
+        flex-wrap: wrap;
+     
+        padding-left: 0px;
+        padding-right:0px ;
+        
+        align-items: center;
+       
+      }
+      .row {
+        margin-left:30%;
+        align-items: center;
+        content: "";
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border:none;
+        padding-left: 0px;
+    padding-right:0px ;
+    margin-top: 0%;
+        animation: Slide_Up 1.4s ease;
+
+      }
       
     
 }
